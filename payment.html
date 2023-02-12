@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="payment.css">
      <!-- fontawesome cdn -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <style>
+        #form-totals{
+        display: none;
+        }
+        </style>
 </head>
 <body>
     <div class="container-fluid" > 
@@ -18,7 +22,7 @@
 </div>
 <div class="container">
    
-    <form aaction="https://formsubmit.co/sincodenito901@gmail.com" method="POST">
+    <form action="https://formsubmit.co/sincodenito901@gmail.com" method="POST">
         <div class="row">
 
             <div class="col">
@@ -93,15 +97,16 @@
         <div class="row">
             <div class="col">
                 <div class="priceView">
-                    <span class="text-totall">Total Payment:</span>
+                    <span class="text-totall">Total Payment:</span>  
                     <h3 class="pricee">₱0</h3>
                 </div>
             </div>
             <div class="col">
-                 <input type="submit" value="place order" class="submit-btn" >
+                <button type="button" value="place order" class="submit-btn" > </button>
    <input type="hidden" name="_next" value="https://syntax-maker.github.io/Happy-Pets/new-shop.html">
                 <input type="hidden" name="_captcha" value="false">
-                      <input type="hidden" name="Total-Payment" placeholder="2023" class="pricee">  <h3 class="pricee">₱0</h3>
+                <div class="priceView">
+                    <input type="hidden" name="Total-Payment" placeholder="2023" > <h3 class="pricee" id="form-totals"> </h3>
             </div>
            
         </div>
